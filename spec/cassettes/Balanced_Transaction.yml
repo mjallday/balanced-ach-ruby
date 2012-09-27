@@ -1,0 +1,1261 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.balancedpayments.com/v1/api_keys
+    body:
+      encoding: UTF-8
+      string: ! '{}'
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.5
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Fri, 06 Jul 2012 04:15:27 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHM3725751cc72111e1a977026ba7e239a9
+      x-balanced-version:
+      - ''
+      content-length:
+      - '854'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"merchant\": {\n    \"phone_number\": \"+16505551212\", \n
+        \   \"city\": \"Nowhere\", \n    \"marketplace\": null, \n    \"name\": \"William
+        Henry Cavendish III\", \n    \"email_address\": \"whc@example.org\", \n    \"created_at\":
+        \"2012-07-06T04:15:27.251166Z\", \n    \"uri\": \"/v1/merchants/TEST-MR1GePqSVApIeytkkt2HmTQR\",
+        \n    \"accounts_uri\": \"/v1/merchants/TEST-MR1GePqSVApIeytkkt2HmTQR/accounts\",
+        \n    \"meta\": {}, \n    \"postal_code\": \"90210\", \n    \"country_code\":
+        \"USA\", \n    \"type\": \"person\", \n    \"balance\": 0, \n    \"api_keys_uri\":
+        \"/v1/merchants/TEST-MR1GePqSVApIeytkkt2HmTQR/api_keys\", \n    \"id\": \"TEST-MR1GePqSVApIeytkkt2HmTQR\",
+        \n    \"street_address\": \"123 Fake St\"\n  }, \n  \"secret\": \"37619dc6c72111e1a977026ba7e239a9\",
+        \n  \"meta\": {}, \n  \"created_at\": \"2012-07-06T04:15:27.485628Z\", \n
+        \ \"uri\": \"/v1/api_keys/AK1Gvd0iiBz2mVE2FTgcnBMJ\", \n  \"id\": \"AK1Gvd0iiBz2mVE2FTgcnBMJ\"\n}"
+    http_version: !!null 
+  recorded_at: Fri, 06 Jul 2012 04:15:28 GMT
+- request:
+    method: post
+    uri: https://api.balancedpayments.com/v1/marketplaces
+    body:
+      encoding: UTF-8
+      string: ! '{}'
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.5
+      Authorization:
+      - Basic Mzc2MTlkYzZjNzIxMTFlMWE5NzcwMjZiYTdlMjM5YTk6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Fri, 06 Jul 2012 04:15:28 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHM37ca9c68c72111e1a29c026ba7e5e72e
+      x-balanced-marketplace:
+      - TEST-MP1HgCDnKZSw46yAiLUC5aNM
+      x-balanced-merchant:
+      - TEST-MR1GePqSVApIeytkkt2HmTQR
+      x-balanced-version:
+      - ''
+      content-length:
+      - '2080'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"support_email_address\": \"support@example.com\", \n  \"bank_accounts_uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/bank_accounts\", \n  \"owner_account\":
+        {\n    \"holds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1HMypc3ApJhgDXGewXmGgC/holds\",
+        \n    \"name\": \"William Henry Cavendish III\", \n    \"roles\": [\n      \"merchant\",
+        \n      \"buyer\"\n    ], \n    \"created_at\": \"2012-07-06T04:15:28.629190Z\",
+        \n    \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1HMypc3ApJhgDXGewXmGgC\",
+        \n    \"bank_accounts_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1HMypc3ApJhgDXGewXmGgC/bank_accounts\",
+        \n    \"refunds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1HMypc3ApJhgDXGewXmGgC/refunds\",
+        \n    \"meta\": {}, \n    \"debits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1HMypc3ApJhgDXGewXmGgC/debits\",
+        \n    \"transactions_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1HMypc3ApJhgDXGewXmGgC/transactions\",
+        \n    \"email_address\": \"whc@example.org\", \n    \"id\": \"AC1HMypc3ApJhgDXGewXmGgC\",
+        \n    \"credits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1HMypc3ApJhgDXGewXmGgC/credits\",
+        \n    \"cards_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1HMypc3ApJhgDXGewXmGgC/cards\"\n
+        \ }, \n  \"holds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/holds\",
+        \n  \"meta\": {}, \n  \"transactions_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/transactions\",
+        \n  \"accounts_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts\",
+        \n  \"id\": \"TEST-MP1HgCDnKZSw46yAiLUC5aNM\", \n  \"credits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/credits\",
+        \n  \"cards_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/cards\",
+        \n  \"in_escrow\": 0, \n  \"domain_url\": \"example.com\", \n  \"name\": \"Test
+        Marketplace\", \n  \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM\",
+        \n  \"support_phone_number\": \"+16505551234\", \n  \"refunds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/refunds\",
+        \n  \"debits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/debits\"\n}"
+    http_version: !!null 
+  recorded_at: Fri, 06 Jul 2012 04:15:29 GMT
+- request:
+    method: get
+    uri: https://api.balancedpayments.com/v1/merchants
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.5
+      Authorization:
+      - Basic Mzc2MTlkYzZjNzIxMTFlMWE5NzcwMjZiYTdlMjM5YTk6
+  response:
+    status:
+      code: 200
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Fri, 06 Jul 2012 04:15:29 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHM38a2cd68c72111e1b502026ba7e239a9
+      x-balanced-marketplace:
+      - TEST-MP1HgCDnKZSw46yAiLUC5aNM
+      x-balanced-merchant:
+      - TEST-MR1GePqSVApIeytkkt2HmTQR
+      x-balanced-version:
+      - ''
+      content-length:
+      - '2062'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"first_uri\": \"/v1/merchants?limit=10&offset=0\", \n  \"items\":
+        [\n    {\n      \"phone_number\": \"+16505551212\", \n      \"city\": \"Nowhere\",
+        \n      \"marketplace\": {\n        \"in_escrow\": 0, \n        \"domain_url\":
+        \"example.com\", \n        \"name\": \"Test Marketplace\", \n        \"owner_account_uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1HMypc3ApJhgDXGewXmGgC\",
+        \n        \"support_email_address\": \"support@example.com\", \n        \"uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM\", \n        \"bank_accounts_uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/bank_accounts\", \n        \"support_phone_number\":
+        \"+16505551234\", \n        \"refunds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/refunds\",
+        \n        \"meta\": {}, \n        \"debits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/debits\",
+        \n        \"holds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/holds\",
+        \n        \"transactions_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/transactions\",
+        \n        \"accounts_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts\",
+        \n        \"id\": \"TEST-MP1HgCDnKZSw46yAiLUC5aNM\", \n        \"credits_uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/credits\", \n        \"cards_uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/cards\"\n      }, \n      \"name\":
+        \"William Henry Cavendish III\", \n      \"email_address\": \"whc@example.org\",
+        \n      \"created_at\": \"2012-07-06T04:15:27.251166Z\", \n      \"uri\":
+        \"/v1/merchants/TEST-MR1GePqSVApIeytkkt2HmTQR\", \n      \"accounts_uri\":
+        \"/v1/merchants/TEST-MR1GePqSVApIeytkkt2HmTQR/accounts\", \n      \"meta\":
+        {}, \n      \"postal_code\": \"90210\", \n      \"country_code\": \"USA\",
+        \n      \"type\": \"person\", \n      \"balance\": 0, \n      \"api_keys_uri\":
+        \"/v1/merchants/TEST-MR1GePqSVApIeytkkt2HmTQR/api_keys\", \n      \"id\":
+        \"TEST-MR1GePqSVApIeytkkt2HmTQR\", \n      \"street_address\": \"123 Fake
+        St\"\n    }\n  ], \n  \"previous_uri\": null, \n  \"uri\": \"/v1/merchants?limit=10&offset=0\",
+        \n  \"limit\": 10, \n  \"offset\": 0, \n  \"total\": 1, \n  \"next_uri\":
+        null, \n  \"last_uri\": \"/v1/merchants?limit=10&offset=0\"\n}"
+    http_version: !!null 
+  recorded_at: Fri, 06 Jul 2012 04:15:29 GMT
+- request:
+    method: get
+    uri: https://api.balancedpayments.com/v1/merchants
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.5
+      Authorization:
+      - Basic Mzc2MTlkYzZjNzIxMTFlMWE5NzcwMjZiYTdlMjM5YTk6
+  response:
+    status:
+      code: 200
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Fri, 06 Jul 2012 04:15:30 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHM38f0ffecc72111e1a29c026ba7e5e72e
+      x-balanced-marketplace:
+      - TEST-MP1HgCDnKZSw46yAiLUC5aNM
+      x-balanced-merchant:
+      - TEST-MR1GePqSVApIeytkkt2HmTQR
+      x-balanced-version:
+      - ''
+      content-length:
+      - '2062'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"first_uri\": \"/v1/merchants?limit=10&offset=0\", \n  \"items\":
+        [\n    {\n      \"phone_number\": \"+16505551212\", \n      \"city\": \"Nowhere\",
+        \n      \"marketplace\": {\n        \"in_escrow\": 0, \n        \"domain_url\":
+        \"example.com\", \n        \"name\": \"Test Marketplace\", \n        \"owner_account_uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1HMypc3ApJhgDXGewXmGgC\",
+        \n        \"support_email_address\": \"support@example.com\", \n        \"uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM\", \n        \"bank_accounts_uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/bank_accounts\", \n        \"support_phone_number\":
+        \"+16505551234\", \n        \"refunds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/refunds\",
+        \n        \"meta\": {}, \n        \"debits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/debits\",
+        \n        \"holds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/holds\",
+        \n        \"transactions_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/transactions\",
+        \n        \"accounts_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts\",
+        \n        \"id\": \"TEST-MP1HgCDnKZSw46yAiLUC5aNM\", \n        \"credits_uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/credits\", \n        \"cards_uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/cards\"\n      }, \n      \"name\":
+        \"William Henry Cavendish III\", \n      \"email_address\": \"whc@example.org\",
+        \n      \"created_at\": \"2012-07-06T04:15:27.251166Z\", \n      \"uri\":
+        \"/v1/merchants/TEST-MR1GePqSVApIeytkkt2HmTQR\", \n      \"accounts_uri\":
+        \"/v1/merchants/TEST-MR1GePqSVApIeytkkt2HmTQR/accounts\", \n      \"meta\":
+        {}, \n      \"postal_code\": \"90210\", \n      \"country_code\": \"USA\",
+        \n      \"type\": \"person\", \n      \"balance\": 0, \n      \"api_keys_uri\":
+        \"/v1/merchants/TEST-MR1GePqSVApIeytkkt2HmTQR/api_keys\", \n      \"id\":
+        \"TEST-MR1GePqSVApIeytkkt2HmTQR\", \n      \"street_address\": \"123 Fake
+        St\"\n    }\n  ], \n  \"previous_uri\": null, \n  \"uri\": \"/v1/merchants?limit=10&offset=0\",
+        \n  \"limit\": 10, \n  \"offset\": 0, \n  \"total\": 1, \n  \"next_uri\":
+        null, \n  \"last_uri\": \"/v1/merchants?limit=10&offset=0\"\n}"
+    http_version: !!null 
+  recorded_at: Fri, 06 Jul 2012 04:15:30 GMT
+- request:
+    method: post
+    uri: https://api.balancedpayments.com/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/bank_accounts
+    body:
+      encoding: UTF-8
+      string: ! '{"account_number":"1234567890","bank_code":"321174851","name":"Jack
+        Q Merchant"}'
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.5
+      Authorization:
+      - Basic Mzc2MTlkYzZjNzIxMTFlMWE5NzcwMjZiYTdlMjM5YTk6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Fri, 06 Jul 2012 04:15:30 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHM393564d4c72111e1a977026ba7e239a9
+      x-balanced-marketplace:
+      - TEST-MP1HgCDnKZSw46yAiLUC5aNM
+      x-balanced-merchant:
+      - TEST-MR1GePqSVApIeytkkt2HmTQR
+      x-balanced-version:
+      - ''
+      content-length:
+      - '366'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"bank_name\": \"SAN MATEO CREDIT UNION\", \n  \"account\":
+        null, \n  \"name\": \"Jack Q Merchant\", \n  \"bank_code\": \"321174851\",
+        \n  \"created_at\": \"2012-07-06T04:15:30.640361Z\", \n  \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/bank_accounts/BA1K3bzOqNBU3dLH3cTEdiaZ\",
+        \n  \"is_valid\": true, \n  \"meta\": {}, \n  \"last_four\": \"7890\", \n
+        \ \"id\": \"BA1K3bzOqNBU3dLH3cTEdiaZ\"\n}"
+    http_version: !!null 
+  recorded_at: Fri, 06 Jul 2012 04:15:30 GMT
+- request:
+    method: get
+    uri: https://api.balancedpayments.com/v1/merchants
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.5
+      Authorization:
+      - Basic Mzc2MTlkYzZjNzIxMTFlMWE5NzcwMjZiYTdlMjM5YTk6
+  response:
+    status:
+      code: 200
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Fri, 06 Jul 2012 04:15:31 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHM3996353ec72111e1a29c026ba7e5e72e
+      x-balanced-marketplace:
+      - TEST-MP1HgCDnKZSw46yAiLUC5aNM
+      x-balanced-merchant:
+      - TEST-MR1GePqSVApIeytkkt2HmTQR
+      x-balanced-version:
+      - ''
+      content-length:
+      - '2062'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"first_uri\": \"/v1/merchants?limit=10&offset=0\", \n  \"items\":
+        [\n    {\n      \"phone_number\": \"+16505551212\", \n      \"city\": \"Nowhere\",
+        \n      \"marketplace\": {\n        \"in_escrow\": 0, \n        \"domain_url\":
+        \"example.com\", \n        \"name\": \"Test Marketplace\", \n        \"owner_account_uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1HMypc3ApJhgDXGewXmGgC\",
+        \n        \"support_email_address\": \"support@example.com\", \n        \"uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM\", \n        \"bank_accounts_uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/bank_accounts\", \n        \"support_phone_number\":
+        \"+16505551234\", \n        \"refunds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/refunds\",
+        \n        \"meta\": {}, \n        \"debits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/debits\",
+        \n        \"holds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/holds\",
+        \n        \"transactions_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/transactions\",
+        \n        \"accounts_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts\",
+        \n        \"id\": \"TEST-MP1HgCDnKZSw46yAiLUC5aNM\", \n        \"credits_uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/credits\", \n        \"cards_uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/cards\"\n      }, \n      \"name\":
+        \"William Henry Cavendish III\", \n      \"email_address\": \"whc@example.org\",
+        \n      \"created_at\": \"2012-07-06T04:15:27.251166Z\", \n      \"uri\":
+        \"/v1/merchants/TEST-MR1GePqSVApIeytkkt2HmTQR\", \n      \"accounts_uri\":
+        \"/v1/merchants/TEST-MR1GePqSVApIeytkkt2HmTQR/accounts\", \n      \"meta\":
+        {}, \n      \"postal_code\": \"90210\", \n      \"country_code\": \"USA\",
+        \n      \"type\": \"person\", \n      \"balance\": 0, \n      \"api_keys_uri\":
+        \"/v1/merchants/TEST-MR1GePqSVApIeytkkt2HmTQR/api_keys\", \n      \"id\":
+        \"TEST-MR1GePqSVApIeytkkt2HmTQR\", \n      \"street_address\": \"123 Fake
+        St\"\n    }\n  ], \n  \"previous_uri\": null, \n  \"uri\": \"/v1/merchants?limit=10&offset=0\",
+        \n  \"limit\": 10, \n  \"offset\": 0, \n  \"total\": 1, \n  \"next_uri\":
+        null, \n  \"last_uri\": \"/v1/merchants?limit=10&offset=0\"\n}"
+    http_version: !!null 
+  recorded_at: Fri, 06 Jul 2012 04:15:31 GMT
+- request:
+    method: get
+    uri: https://api.balancedpayments.com/v1/merchants
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.5
+      Authorization:
+      - Basic Mzc2MTlkYzZjNzIxMTFlMWE5NzcwMjZiYTdlMjM5YTk6
+  response:
+    status:
+      code: 200
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Fri, 06 Jul 2012 04:15:31 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHM39e1ff28c72111e1a476026ba7e239a9
+      x-balanced-marketplace:
+      - TEST-MP1HgCDnKZSw46yAiLUC5aNM
+      x-balanced-merchant:
+      - TEST-MR1GePqSVApIeytkkt2HmTQR
+      x-balanced-version:
+      - ''
+      content-length:
+      - '2062'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"first_uri\": \"/v1/merchants?limit=10&offset=0\", \n  \"items\":
+        [\n    {\n      \"phone_number\": \"+16505551212\", \n      \"city\": \"Nowhere\",
+        \n      \"marketplace\": {\n        \"in_escrow\": 0, \n        \"domain_url\":
+        \"example.com\", \n        \"name\": \"Test Marketplace\", \n        \"owner_account_uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1HMypc3ApJhgDXGewXmGgC\",
+        \n        \"support_email_address\": \"support@example.com\", \n        \"uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM\", \n        \"bank_accounts_uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/bank_accounts\", \n        \"support_phone_number\":
+        \"+16505551234\", \n        \"refunds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/refunds\",
+        \n        \"meta\": {}, \n        \"debits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/debits\",
+        \n        \"holds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/holds\",
+        \n        \"transactions_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/transactions\",
+        \n        \"accounts_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts\",
+        \n        \"id\": \"TEST-MP1HgCDnKZSw46yAiLUC5aNM\", \n        \"credits_uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/credits\", \n        \"cards_uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/cards\"\n      }, \n      \"name\":
+        \"William Henry Cavendish III\", \n      \"email_address\": \"whc@example.org\",
+        \n      \"created_at\": \"2012-07-06T04:15:27.251166Z\", \n      \"uri\":
+        \"/v1/merchants/TEST-MR1GePqSVApIeytkkt2HmTQR\", \n      \"accounts_uri\":
+        \"/v1/merchants/TEST-MR1GePqSVApIeytkkt2HmTQR/accounts\", \n      \"meta\":
+        {}, \n      \"postal_code\": \"90210\", \n      \"country_code\": \"USA\",
+        \n      \"type\": \"person\", \n      \"balance\": 0, \n      \"api_keys_uri\":
+        \"/v1/merchants/TEST-MR1GePqSVApIeytkkt2HmTQR/api_keys\", \n      \"id\":
+        \"TEST-MR1GePqSVApIeytkkt2HmTQR\", \n      \"street_address\": \"123 Fake
+        St\"\n    }\n  ], \n  \"previous_uri\": null, \n  \"uri\": \"/v1/merchants?limit=10&offset=0\",
+        \n  \"limit\": 10, \n  \"offset\": 0, \n  \"total\": 1, \n  \"next_uri\":
+        null, \n  \"last_uri\": \"/v1/merchants?limit=10&offset=0\"\n}"
+    http_version: !!null 
+  recorded_at: Fri, 06 Jul 2012 04:15:32 GMT
+- request:
+    method: post
+    uri: https://api.balancedpayments.com/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/cards
+    body:
+      encoding: UTF-8
+      string: ! '{"card_number":"4111111111111111","expiration_month":"1","expiration_year":"2015"}'
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.5
+      Authorization:
+      - Basic Mzc2MTlkYzZjNzIxMTFlMWE5NzcwMjZiYTdlMjM5YTk6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Fri, 06 Jul 2012 04:15:32 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHM3a236b70c72111e1ad0d026ba7e5e72e
+      x-balanced-marketplace:
+      - TEST-MP1HgCDnKZSw46yAiLUC5aNM
+      x-balanced-merchant:
+      - TEST-MR1GePqSVApIeytkkt2HmTQR
+      x-balanced-version:
+      - ''
+      content-length:
+      - '370'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"card_type\": \"visa\", \n  \"account\": null, \n  \"name\":
+        null, \n  \"expiration_year\": 2015, \n  \"created_at\": \"2012-07-06T04:15:32.221146Z\",
+        \n  \"brand\": \"Visa\", \n  \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/cards/CC1LP0YFu1wFtca1ZI5amO6y\",
+        \n  \"expiration_month\": 1, \n  \"is_valid\": true, \n  \"meta\": {}, \n
+        \ \"last_four\": 1111, \n  \"id\": \"CC1LP0YFu1wFtca1ZI5amO6y\"\n}"
+    http_version: !!null 
+  recorded_at: Fri, 06 Jul 2012 04:15:32 GMT
+- request:
+    method: post
+    uri: https://api.balancedpayments.com/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts
+    body:
+      encoding: UTF-8
+      string: ! '{"email_address":"merchant@example.org","bank_account_uri":"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/bank_accounts/BA1K3bzOqNBU3dLH3cTEdiaZ","name":"Jack
+        Q Merchant","meta":null,"merchant":{"type":"person","name":"Billy Jones","street_address":"801
+        High St.","postal_code":"94301","country":"USA","dob":"1842-01","phone_number":"+16505551234"}}'
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.5
+      Authorization:
+      - Basic Mzc2MTlkYzZjNzIxMTFlMWE5NzcwMjZiYTdlMjM5YTk6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Fri, 06 Jul 2012 04:15:33 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHM3a7729e0c72111e1a476026ba7e239a9
+      x-balanced-marketplace:
+      - TEST-MP1HgCDnKZSw46yAiLUC5aNM
+      x-balanced-merchant:
+      - TEST-MR1GePqSVApIeytkkt2HmTQR
+      x-balanced-version:
+      - ''
+      content-length:
+      - '1099'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"holds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/holds\",
+        \n  \"name\": \"Jack Q Merchant\", \n  \"roles\": [\n    \"merchant\", \n
+        \   \"buyer\"\n  ], \n  \"created_at\": \"2012-07-06T04:15:32.816841Z\", \n
+        \ \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3\",
+        \n  \"bank_accounts_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/bank_accounts\",
+        \n  \"refunds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/refunds\",
+        \n  \"meta\": {}, \n  \"debits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/debits\",
+        \n  \"transactions_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/transactions\",
+        \n  \"email_address\": \"merchant@example.org\", \n  \"id\": \"AC1MuWU1d7tpswJuERuuULX3\",
+        \n  \"credits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/credits\",
+        \n  \"cards_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/cards\"\n}"
+    http_version: !!null 
+  recorded_at: Fri, 06 Jul 2012 04:15:33 GMT
+- request:
+    method: post
+    uri: https://api.balancedpayments.com/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts
+    body:
+      encoding: UTF-8
+      string: ! '{"email_address":"buyer+transactions@example.org","card_uri":"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/cards/CC1LP0YFu1wFtca1ZI5amO6y","name":"Jack
+        Q Buyer","meta":null}'
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.5
+      Authorization:
+      - Basic Mzc2MTlkYzZjNzIxMTFlMWE5NzcwMjZiYTdlMjM5YTk6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Fri, 06 Jul 2012 04:15:34 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHM3b361e54c72111e1a29c026ba7e5e72e
+      x-balanced-marketplace:
+      - TEST-MP1HgCDnKZSw46yAiLUC5aNM
+      x-balanced-merchant:
+      - TEST-MR1GePqSVApIeytkkt2HmTQR
+      x-balanced-version:
+      - ''
+      content-length:
+      - '1089'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"holds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/holds\",
+        \n  \"name\": \"Jack Q Buyer\", \n  \"roles\": [\n    \"buyer\"\n  ], \n  \"created_at\":
+        \"2012-07-06T04:15:33.906619Z\", \n  \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU\",
+        \n  \"bank_accounts_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/bank_accounts\",
+        \n  \"refunds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/refunds\",
+        \n  \"meta\": {}, \n  \"debits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/debits\",
+        \n  \"transactions_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/transactions\",
+        \n  \"email_address\": \"buyer+transactions@example.org\", \n  \"id\": \"AC1NIz6vDOr8Tw4XRtWTewBU\",
+        \n  \"credits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/credits\",
+        \n  \"cards_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/cards\"\n}"
+    http_version: !!null 
+  recorded_at: Fri, 06 Jul 2012 04:15:34 GMT
+- request:
+    method: put
+    uri: https://api.balancedpayments.com/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU
+    body:
+      encoding: UTF-8
+      string: ! '{"holds_uri":"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/holds","name":"Jack
+        Q Buyer","roles":["buyer"],"created_at":"2012-07-06T04:15:33.906619Z","bank_accounts_uri":"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/bank_accounts","refunds_uri":"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/refunds","meta":{},"debits_uri":"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/debits","transactions_uri":"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/transactions","email_address":"buyer+transactions@example.org","id":"AC1NIz6vDOr8Tw4XRtWTewBU","credits_uri":"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/credits","cards_uri":"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/cards"}'
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.5
+      Authorization:
+      - Basic Mzc2MTlkYzZjNzIxMTFlMWE5NzcwMjZiYTdlMjM5YTk6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Fri, 06 Jul 2012 04:15:34 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHM3bbb907ac72111e19eae026ba7e5e72e
+      x-balanced-marketplace:
+      - TEST-MP1HgCDnKZSw46yAiLUC5aNM
+      x-balanced-merchant:
+      - TEST-MR1GePqSVApIeytkkt2HmTQR
+      x-balanced-version:
+      - ''
+      content-length:
+      - '1089'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"holds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/holds\",
+        \n  \"name\": \"Jack Q Buyer\", \n  \"roles\": [\n    \"buyer\"\n  ], \n  \"created_at\":
+        \"2012-07-06T04:15:33.906619Z\", \n  \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU\",
+        \n  \"bank_accounts_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/bank_accounts\",
+        \n  \"refunds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/refunds\",
+        \n  \"meta\": {}, \n  \"debits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/debits\",
+        \n  \"transactions_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/transactions\",
+        \n  \"email_address\": \"buyer+transactions@example.org\", \n  \"id\": \"AC1NIz6vDOr8Tw4XRtWTewBU\",
+        \n  \"credits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/credits\",
+        \n  \"cards_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/cards\"\n}"
+    http_version: !!null 
+  recorded_at: Fri, 06 Jul 2012 04:15:35 GMT
+- request:
+    method: post
+    uri: https://api.balancedpayments.com/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/debits
+    body:
+      encoding: UTF-8
+      string: ! '{"amount":1000,"appears_on_statement_as":null,"hold_uri":null,"meta":null,"description":"Transaction
+        #1","source_uri":null}'
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.5
+      Authorization:
+      - Basic Mzc2MTlkYzZjNzIxMTFlMWE5NzcwMjZiYTdlMjM5YTk6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Fri, 06 Jul 2012 04:15:35 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHM3c091bcec72111e1a476026ba7e239a9
+      x-balanced-marketplace:
+      - TEST-MP1HgCDnKZSw46yAiLUC5aNM
+      x-balanced-merchant:
+      - TEST-MR1GePqSVApIeytkkt2HmTQR
+      x-balanced-version:
+      - ''
+      content-length:
+      - '2670'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"account\": {\n    \"holds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/holds\",
+        \n    \"name\": \"Jack Q Buyer\", \n    \"roles\": [\n      \"buyer\"\n    ],
+        \n    \"created_at\": \"2012-07-06T04:15:33.906619Z\", \n    \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU\",
+        \n    \"bank_accounts_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/bank_accounts\",
+        \n    \"refunds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/refunds\",
+        \n    \"meta\": {}, \n    \"debits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/debits\",
+        \n    \"transactions_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/transactions\",
+        \n    \"email_address\": \"buyer+transactions@example.org\", \n    \"id\":
+        \"AC1NIz6vDOr8Tw4XRtWTewBU\", \n    \"credits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/credits\",
+        \n    \"cards_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/cards\"\n
+        \ }, \n  \"fee\": 29, \n  \"description\": \"Transaction #1\", \n  \"refunds_uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/debits/WD1PJL360uW9eY7NNRSacPYl/refunds\",
+        \n  \"amount\": 1000, \n  \"created_at\": \"2012-07-06T04:15:35.705826Z\",
+        \n  \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/debits/WD1PJL360uW9eY7NNRSacPYl\",
+        \n  \"source\": {\n    \"expiration_month\": 1, \n    \"name\": null, \n    \"expiration_year\":
+        2015, \n    \"brand\": \"Visa\", \n    \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/cards/CC1LP0YFu1wFtca1ZI5amO6y\",
+        \n    \"id\": \"CC1LP0YFu1wFtca1ZI5amO6y\", \n    \"card_type\": \"visa\",
+        \n    \"is_valid\": true, \n    \"meta\": {}, \n    \"last_four\": 1111, \n
+        \   \"created_at\": \"2012-07-06T04:15:32.221146Z\"\n  }, \n  \"transaction_number\":
+        \"W814-448-9958\", \n  \"meta\": {}, \n  \"appears_on_statement_as\": \"example.com\",
+        \n  \"hold\": {\n    \"fee\": 30, \n    \"description\": \"Transaction #1\",
+        \n    \"created_at\": \"2012-07-06T04:15:35.477409Z\", \n    \"is_void\":
+        false, \n    \"expires_at\": \"2012-07-13T04:15:35.445601Z\", \n    \"uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/holds/HL1PutPl2JQak6yqYbNOyze9\",
+        \n    \"amount\": 1000, \n    \"meta\": {}, \n    \"account_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU\",
+        \n    \"source_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/cards/CC1LP0YFu1wFtca1ZI5amO6y\",
+        \n    \"id\": \"HL1PutPl2JQak6yqYbNOyze9\"\n  }, \n  \"id\": \"WD1PJL360uW9eY7NNRSacPYl\",
+        \n  \"available_at\": \"2012-07-06T04:15:35.635896Z\"\n}"
+    http_version: !!null 
+  recorded_at: Fri, 06 Jul 2012 04:15:36 GMT
+- request:
+    method: post
+    uri: https://api.balancedpayments.com/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/credits
+    body:
+      encoding: UTF-8
+      string: ! '{"amount":500,"meta":null,"description":"Credit from Debit #1","destination_uri":null}'
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.5
+      Authorization:
+      - Basic Mzc2MTlkYzZjNzIxMTFlMWE5NzcwMjZiYTdlMjM5YTk6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Fri, 06 Jul 2012 04:15:36 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHM3cb90d72c72111e19eae026ba7e5e72e
+      x-balanced-marketplace:
+      - TEST-MP1HgCDnKZSw46yAiLUC5aNM
+      x-balanced-merchant:
+      - TEST-MR1GePqSVApIeytkkt2HmTQR
+      x-balanced-version:
+      - ''
+      content-length:
+      - '1932'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"account\": {\n    \"holds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/holds\",
+        \n    \"name\": \"Jack Q Merchant\", \n    \"roles\": [\n      \"merchant\",
+        \n      \"buyer\"\n    ], \n    \"created_at\": \"2012-07-06T04:15:32.816841Z\",
+        \n    \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3\",
+        \n    \"bank_accounts_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/bank_accounts\",
+        \n    \"refunds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/refunds\",
+        \n    \"meta\": {}, \n    \"debits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/debits\",
+        \n    \"transactions_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/transactions\",
+        \n    \"email_address\": \"merchant@example.org\", \n    \"id\": \"AC1MuWU1d7tpswJuERuuULX3\",
+        \n    \"credits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/credits\",
+        \n    \"cards_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/cards\"\n
+        \ }, \n  \"fee\": 25, \n  \"description\": \"Credit from Debit #1\", \n  \"amount\":
+        500, \n  \"created_at\": \"2012-07-06T04:15:36.643481Z\", \n  \"destination\":
+        {\n    \"bank_name\": \"SAN MATEO CREDIT UNION\", \n    \"name\": \"Jack Q
+        Merchant\", \n    \"bank_code\": \"321174851\", \n    \"created_at\": \"2012-07-06T04:15:30.640361Z\",
+        \n    \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/bank_accounts/BA1K3bzOqNBU3dLH3cTEdiaZ\",
+        \n    \"is_valid\": true, \n    \"meta\": {}, \n    \"last_four\": \"7890\",
+        \n    \"id\": \"BA1K3bzOqNBU3dLH3cTEdiaZ\"\n  }, \n  \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/credits/CR1QNewekENnrA3qGvATAPAq\",
+        \n  \"transaction_number\": \"CR249-379-4533\", \n  \"meta\": {}, \n  \"id\":
+        \"CR1QNewekENnrA3qGvATAPAq\", \n  \"available_at\": \"2012-07-06T04:15:36.597135Z\"\n}"
+    http_version: !!null 
+  recorded_at: Fri, 06 Jul 2012 04:15:37 GMT
+- request:
+    method: post
+    uri: https://api.balancedpayments.com/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/debits
+    body:
+      encoding: UTF-8
+      string: ! '{"amount":1000,"appears_on_statement_as":null,"hold_uri":null,"meta":null,"description":"Transaction
+        #2","source_uri":null}'
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.5
+      Authorization:
+      - Basic Mzc2MTlkYzZjNzIxMTFlMWE5NzcwMjZiYTdlMjM5YTk6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Fri, 06 Jul 2012 04:15:37 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHM3d4e1480c72111e1a476026ba7e239a9
+      x-balanced-marketplace:
+      - TEST-MP1HgCDnKZSw46yAiLUC5aNM
+      x-balanced-merchant:
+      - TEST-MR1GePqSVApIeytkkt2HmTQR
+      x-balanced-version:
+      - ''
+      content-length:
+      - '2670'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"account\": {\n    \"holds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/holds\",
+        \n    \"name\": \"Jack Q Buyer\", \n    \"roles\": [\n      \"buyer\"\n    ],
+        \n    \"created_at\": \"2012-07-06T04:15:33.906619Z\", \n    \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU\",
+        \n    \"bank_accounts_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/bank_accounts\",
+        \n    \"refunds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/refunds\",
+        \n    \"meta\": {}, \n    \"debits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/debits\",
+        \n    \"transactions_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/transactions\",
+        \n    \"email_address\": \"buyer+transactions@example.org\", \n    \"id\":
+        \"AC1NIz6vDOr8Tw4XRtWTewBU\", \n    \"credits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/credits\",
+        \n    \"cards_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/cards\"\n
+        \ }, \n  \"fee\": 29, \n  \"description\": \"Transaction #2\", \n  \"refunds_uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/debits/WD1S6EJeH7DjG9jlYl9cpJVf/refunds\",
+        \n  \"amount\": 1000, \n  \"created_at\": \"2012-07-06T04:15:37.813974Z\",
+        \n  \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/debits/WD1S6EJeH7DjG9jlYl9cpJVf\",
+        \n  \"source\": {\n    \"expiration_month\": 1, \n    \"name\": null, \n    \"expiration_year\":
+        2015, \n    \"brand\": \"Visa\", \n    \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/cards/CC1LP0YFu1wFtca1ZI5amO6y\",
+        \n    \"id\": \"CC1LP0YFu1wFtca1ZI5amO6y\", \n    \"card_type\": \"visa\",
+        \n    \"is_valid\": true, \n    \"meta\": {}, \n    \"last_four\": 1111, \n
+        \   \"created_at\": \"2012-07-06T04:15:32.221146Z\"\n  }, \n  \"transaction_number\":
+        \"W944-394-6865\", \n  \"meta\": {}, \n  \"appears_on_statement_as\": \"example.com\",
+        \n  \"hold\": {\n    \"fee\": 30, \n    \"description\": \"Transaction #2\",
+        \n    \"created_at\": \"2012-07-06T04:15:37.604213Z\", \n    \"is_void\":
+        false, \n    \"expires_at\": \"2012-07-13T04:15:37.560694Z\", \n    \"uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/holds/HL1RSMVMsA6CpZd4YtUNdfXX\",
+        \n    \"amount\": 1000, \n    \"meta\": {}, \n    \"account_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU\",
+        \n    \"source_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/cards/CC1LP0YFu1wFtca1ZI5amO6y\",
+        \n    \"id\": \"HL1RSMVMsA6CpZd4YtUNdfXX\"\n  }, \n  \"id\": \"WD1S6EJeH7DjG9jlYl9cpJVf\",
+        \n  \"available_at\": \"2012-07-06T04:15:37.759752Z\"\n}"
+    http_version: !!null 
+  recorded_at: Fri, 06 Jul 2012 04:15:38 GMT
+- request:
+    method: post
+    uri: https://api.balancedpayments.com/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/credits
+    body:
+      encoding: UTF-8
+      string: ! '{"amount":500,"meta":null,"description":"Credit from Debit #2","destination_uri":null}'
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.5
+      Authorization:
+      - Basic Mzc2MTlkYzZjNzIxMTFlMWE5NzcwMjZiYTdlMjM5YTk6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Fri, 06 Jul 2012 04:15:39 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHM3e133ac6c72111e1ad0d026ba7e5e72e
+      x-balanced-marketplace:
+      - TEST-MP1HgCDnKZSw46yAiLUC5aNM
+      x-balanced-merchant:
+      - TEST-MR1GePqSVApIeytkkt2HmTQR
+      x-balanced-version:
+      - ''
+      content-length:
+      - '1932'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"account\": {\n    \"holds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/holds\",
+        \n    \"name\": \"Jack Q Merchant\", \n    \"roles\": [\n      \"merchant\",
+        \n      \"buyer\"\n    ], \n    \"created_at\": \"2012-07-06T04:15:32.816841Z\",
+        \n    \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3\",
+        \n    \"bank_accounts_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/bank_accounts\",
+        \n    \"refunds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/refunds\",
+        \n    \"meta\": {}, \n    \"debits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/debits\",
+        \n    \"transactions_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/transactions\",
+        \n    \"email_address\": \"merchant@example.org\", \n    \"id\": \"AC1MuWU1d7tpswJuERuuULX3\",
+        \n    \"credits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/credits\",
+        \n    \"cards_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/cards\"\n
+        \ }, \n  \"fee\": 25, \n  \"description\": \"Credit from Debit #2\", \n  \"amount\":
+        500, \n  \"created_at\": \"2012-07-06T04:15:38.890569Z\", \n  \"destination\":
+        {\n    \"bank_name\": \"SAN MATEO CREDIT UNION\", \n    \"name\": \"Jack Q
+        Merchant\", \n    \"bank_code\": \"321174851\", \n    \"created_at\": \"2012-07-06T04:15:30.640361Z\",
+        \n    \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/bank_accounts/BA1K3bzOqNBU3dLH3cTEdiaZ\",
+        \n    \"is_valid\": true, \n    \"meta\": {}, \n    \"last_four\": \"7890\",
+        \n    \"id\": \"BA1K3bzOqNBU3dLH3cTEdiaZ\"\n  }, \n  \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/credits/CR1TjVpCU0MPXyGyR1j1todw\",
+        \n  \"transaction_number\": \"CR726-501-6641\", \n  \"meta\": {}, \n  \"id\":
+        \"CR1TjVpCU0MPXyGyR1j1todw\", \n  \"available_at\": \"2012-07-06T04:15:38.859411Z\"\n}"
+    http_version: !!null 
+  recorded_at: Fri, 06 Jul 2012 04:15:39 GMT
+- request:
+    method: post
+    uri: https://api.balancedpayments.com/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/debits
+    body:
+      encoding: UTF-8
+      string: ! '{"amount":1000,"appears_on_statement_as":null,"hold_uri":null,"meta":null,"description":"Transaction
+        #3","source_uri":null}'
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.5
+      Authorization:
+      - Basic Mzc2MTlkYzZjNzIxMTFlMWE5NzcwMjZiYTdlMjM5YTk6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Fri, 06 Jul 2012 04:15:40 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHM3ea272e0c72111e1b502026ba7e239a9
+      x-balanced-marketplace:
+      - TEST-MP1HgCDnKZSw46yAiLUC5aNM
+      x-balanced-merchant:
+      - TEST-MR1GePqSVApIeytkkt2HmTQR
+      x-balanced-version:
+      - ''
+      content-length:
+      - '2670'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"account\": {\n    \"holds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/holds\",
+        \n    \"name\": \"Jack Q Buyer\", \n    \"roles\": [\n      \"buyer\"\n    ],
+        \n    \"created_at\": \"2012-07-06T04:15:33.906619Z\", \n    \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU\",
+        \n    \"bank_accounts_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/bank_accounts\",
+        \n    \"refunds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/refunds\",
+        \n    \"meta\": {}, \n    \"debits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/debits\",
+        \n    \"transactions_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/transactions\",
+        \n    \"email_address\": \"buyer+transactions@example.org\", \n    \"id\":
+        \"AC1NIz6vDOr8Tw4XRtWTewBU\", \n    \"credits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/credits\",
+        \n    \"cards_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/cards\"\n
+        \ }, \n  \"fee\": 29, \n  \"description\": \"Transaction #3\", \n  \"refunds_uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/debits/WD1UCNfBSOXSWURUs4DnOGRH/refunds\",
+        \n  \"amount\": 1000, \n  \"created_at\": \"2012-07-06T04:15:40.051078Z\",
+        \n  \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/debits/WD1UCNfBSOXSWURUs4DnOGRH\",
+        \n  \"source\": {\n    \"expiration_month\": 1, \n    \"name\": null, \n    \"expiration_year\":
+        2015, \n    \"brand\": \"Visa\", \n    \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/cards/CC1LP0YFu1wFtca1ZI5amO6y\",
+        \n    \"id\": \"CC1LP0YFu1wFtca1ZI5amO6y\", \n    \"card_type\": \"visa\",
+        \n    \"is_valid\": true, \n    \"meta\": {}, \n    \"last_four\": 1111, \n
+        \   \"created_at\": \"2012-07-06T04:15:32.221146Z\"\n  }, \n  \"transaction_number\":
+        \"W232-875-1833\", \n  \"meta\": {}, \n  \"appears_on_statement_as\": \"example.com\",
+        \n  \"hold\": {\n    \"fee\": 30, \n    \"description\": \"Transaction #3\",
+        \n    \"created_at\": \"2012-07-06T04:15:39.835135Z\", \n    \"is_void\":
+        false, \n    \"expires_at\": \"2012-07-13T04:15:39.797613Z\", \n    \"uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/holds/HL1UomaiYDlzZ1JVy8k4gtRv\",
+        \n    \"amount\": 1000, \n    \"meta\": {}, \n    \"account_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU\",
+        \n    \"source_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/cards/CC1LP0YFu1wFtca1ZI5amO6y\",
+        \n    \"id\": \"HL1UomaiYDlzZ1JVy8k4gtRv\"\n  }, \n  \"id\": \"WD1UCNfBSOXSWURUs4DnOGRH\",
+        \n  \"available_at\": \"2012-07-06T04:15:39.981386Z\"\n}"
+    http_version: !!null 
+  recorded_at: Fri, 06 Jul 2012 04:15:40 GMT
+- request:
+    method: post
+    uri: https://api.balancedpayments.com/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/credits
+    body:
+      encoding: UTF-8
+      string: ! '{"amount":500,"meta":null,"description":"Credit from Debit #3","destination_uri":null}'
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.5
+      Authorization:
+      - Basic Mzc2MTlkYzZjNzIxMTFlMWE5NzcwMjZiYTdlMjM5YTk6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Fri, 06 Jul 2012 04:15:41 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHM3f4557f8c72111e1ad0d026ba7e5e72e
+      x-balanced-marketplace:
+      - TEST-MP1HgCDnKZSw46yAiLUC5aNM
+      x-balanced-merchant:
+      - TEST-MR1GePqSVApIeytkkt2HmTQR
+      x-balanced-version:
+      - ''
+      content-length:
+      - '1932'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"account\": {\n    \"holds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/holds\",
+        \n    \"name\": \"Jack Q Merchant\", \n    \"roles\": [\n      \"merchant\",
+        \n      \"buyer\"\n    ], \n    \"created_at\": \"2012-07-06T04:15:32.816841Z\",
+        \n    \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3\",
+        \n    \"bank_accounts_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/bank_accounts\",
+        \n    \"refunds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/refunds\",
+        \n    \"meta\": {}, \n    \"debits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/debits\",
+        \n    \"transactions_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/transactions\",
+        \n    \"email_address\": \"merchant@example.org\", \n    \"id\": \"AC1MuWU1d7tpswJuERuuULX3\",
+        \n    \"credits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/credits\",
+        \n    \"cards_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/cards\"\n
+        \ }, \n  \"fee\": 25, \n  \"description\": \"Credit from Debit #3\", \n  \"amount\":
+        500, \n  \"created_at\": \"2012-07-06T04:15:40.943481Z\", \n  \"destination\":
+        {\n    \"bank_name\": \"SAN MATEO CREDIT UNION\", \n    \"name\": \"Jack Q
+        Merchant\", \n    \"bank_code\": \"321174851\", \n    \"created_at\": \"2012-07-06T04:15:30.640361Z\",
+        \n    \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/bank_accounts/BA1K3bzOqNBU3dLH3cTEdiaZ\",
+        \n    \"is_valid\": true, \n    \"meta\": {}, \n    \"last_four\": \"7890\",
+        \n    \"id\": \"BA1K3bzOqNBU3dLH3cTEdiaZ\"\n  }, \n  \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/credits/CR1VD4w7kmrYeC8HzYbrdfHw\",
+        \n  \"transaction_number\": \"CR045-871-2208\", \n  \"meta\": {}, \n  \"id\":
+        \"CR1VD4w7kmrYeC8HzYbrdfHw\", \n  \"available_at\": \"2012-07-06T04:15:40.896853Z\"\n}"
+    http_version: !!null 
+  recorded_at: Fri, 06 Jul 2012 04:15:41 GMT
+- request:
+    method: post
+    uri: https://api.balancedpayments.com/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/debits
+    body:
+      encoding: UTF-8
+      string: ! '{"amount":1000,"appears_on_statement_as":null,"hold_uri":null,"meta":null,"description":"Transaction
+        #4","source_uri":null}'
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.5
+      Authorization:
+      - Basic Mzc2MTlkYzZjNzIxMTFlMWE5NzcwMjZiYTdlMjM5YTk6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Fri, 06 Jul 2012 04:15:42 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHM4003fd20c72111e1a476026ba7e239a9
+      x-balanced-marketplace:
+      - TEST-MP1HgCDnKZSw46yAiLUC5aNM
+      x-balanced-merchant:
+      - TEST-MR1GePqSVApIeytkkt2HmTQR
+      x-balanced-version:
+      - ''
+      content-length:
+      - '2670'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"account\": {\n    \"holds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/holds\",
+        \n    \"name\": \"Jack Q Buyer\", \n    \"roles\": [\n      \"buyer\"\n    ],
+        \n    \"created_at\": \"2012-07-06T04:15:33.906619Z\", \n    \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU\",
+        \n    \"bank_accounts_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/bank_accounts\",
+        \n    \"refunds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/refunds\",
+        \n    \"meta\": {}, \n    \"debits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/debits\",
+        \n    \"transactions_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/transactions\",
+        \n    \"email_address\": \"buyer+transactions@example.org\", \n    \"id\":
+        \"AC1NIz6vDOr8Tw4XRtWTewBU\", \n    \"credits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/credits\",
+        \n    \"cards_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/cards\"\n
+        \ }, \n  \"fee\": 29, \n  \"description\": \"Transaction #4\", \n  \"refunds_uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/debits/WD1XejxX8fK67u4NB26yp6kx/refunds\",
+        \n  \"amount\": 1000, \n  \"created_at\": \"2012-07-06T04:15:42.367476Z\",
+        \n  \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/debits/WD1XejxX8fK67u4NB26yp6kx\",
+        \n  \"source\": {\n    \"expiration_month\": 1, \n    \"name\": null, \n    \"expiration_year\":
+        2015, \n    \"brand\": \"Visa\", \n    \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/cards/CC1LP0YFu1wFtca1ZI5amO6y\",
+        \n    \"id\": \"CC1LP0YFu1wFtca1ZI5amO6y\", \n    \"card_type\": \"visa\",
+        \n    \"is_valid\": true, \n    \"meta\": {}, \n    \"last_four\": 1111, \n
+        \   \"created_at\": \"2012-07-06T04:15:32.221146Z\"\n  }, \n  \"transaction_number\":
+        \"W258-221-2253\", \n  \"meta\": {}, \n  \"appears_on_statement_as\": \"example.com\",
+        \n  \"hold\": {\n    \"fee\": 30, \n    \"description\": \"Transaction #4\",
+        \n    \"created_at\": \"2012-07-06T04:15:42.158682Z\", \n    \"is_void\":
+        false, \n    \"expires_at\": \"2012-07-13T04:15:42.114735Z\", \n    \"uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/holds/HL1X0nZ1uDxbOOTy7t0ayCEh\",
+        \n    \"amount\": 1000, \n    \"meta\": {}, \n    \"account_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU\",
+        \n    \"source_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/cards/CC1LP0YFu1wFtca1ZI5amO6y\",
+        \n    \"id\": \"HL1X0nZ1uDxbOOTy7t0ayCEh\"\n  }, \n  \"id\": \"WD1XejxX8fK67u4NB26yp6kx\",
+        \n  \"available_at\": \"2012-07-06T04:15:42.316460Z\"\n}"
+    http_version: !!null 
+  recorded_at: Fri, 06 Jul 2012 04:15:43 GMT
+- request:
+    method: post
+    uri: https://api.balancedpayments.com/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/credits
+    body:
+      encoding: UTF-8
+      string: ! '{"amount":500,"meta":null,"description":"Credit from Debit #4","destination_uri":null}'
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.5
+      Authorization:
+      - Basic Mzc2MTlkYzZjNzIxMTFlMWE5NzcwMjZiYTdlMjM5YTk6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Fri, 06 Jul 2012 04:15:43 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHM40c4a408c72111e19eae026ba7e5e72e
+      x-balanced-marketplace:
+      - TEST-MP1HgCDnKZSw46yAiLUC5aNM
+      x-balanced-merchant:
+      - TEST-MR1GePqSVApIeytkkt2HmTQR
+      x-balanced-version:
+      - ''
+      content-length:
+      - '1932'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"account\": {\n    \"holds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/holds\",
+        \n    \"name\": \"Jack Q Merchant\", \n    \"roles\": [\n      \"merchant\",
+        \n      \"buyer\"\n    ], \n    \"created_at\": \"2012-07-06T04:15:32.816841Z\",
+        \n    \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3\",
+        \n    \"bank_accounts_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/bank_accounts\",
+        \n    \"refunds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/refunds\",
+        \n    \"meta\": {}, \n    \"debits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/debits\",
+        \n    \"transactions_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/transactions\",
+        \n    \"email_address\": \"merchant@example.org\", \n    \"id\": \"AC1MuWU1d7tpswJuERuuULX3\",
+        \n    \"credits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/credits\",
+        \n    \"cards_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/cards\"\n
+        \ }, \n  \"fee\": 25, \n  \"description\": \"Credit from Debit #4\", \n  \"amount\":
+        500, \n  \"created_at\": \"2012-07-06T04:15:43.407713Z\", \n  \"destination\":
+        {\n    \"bank_name\": \"SAN MATEO CREDIT UNION\", \n    \"name\": \"Jack Q
+        Merchant\", \n    \"bank_code\": \"321174851\", \n    \"created_at\": \"2012-07-06T04:15:30.640361Z\",
+        \n    \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/bank_accounts/BA1K3bzOqNBU3dLH3cTEdiaZ\",
+        \n    \"is_valid\": true, \n    \"meta\": {}, \n    \"last_four\": \"7890\",
+        \n    \"id\": \"BA1K3bzOqNBU3dLH3cTEdiaZ\"\n  }, \n  \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/credits/CR1YoV0H30lvrJXJ4KUop1sG\",
+        \n  \"transaction_number\": \"CR077-108-5350\", \n  \"meta\": {}, \n  \"id\":
+        \"CR1YoV0H30lvrJXJ4KUop1sG\", \n  \"available_at\": \"2012-07-06T04:15:43.374719Z\"\n}"
+    http_version: !!null 
+  recorded_at: Fri, 06 Jul 2012 04:15:43 GMT
+- request:
+    method: post
+    uri: https://api.balancedpayments.com/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/debits
+    body:
+      encoding: UTF-8
+      string: ! '{"amount":1000,"appears_on_statement_as":null,"hold_uri":null,"meta":null,"description":"Transaction
+        #5","source_uri":null}'
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.5
+      Authorization:
+      - Basic Mzc2MTlkYzZjNzIxMTFlMWE5NzcwMjZiYTdlMjM5YTk6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Fri, 06 Jul 2012 04:15:44 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHM414c98e0c72111e1a476026ba7e239a9
+      x-balanced-marketplace:
+      - TEST-MP1HgCDnKZSw46yAiLUC5aNM
+      x-balanced-merchant:
+      - TEST-MR1GePqSVApIeytkkt2HmTQR
+      x-balanced-version:
+      - ''
+      content-length:
+      - '2670'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"account\": {\n    \"holds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/holds\",
+        \n    \"name\": \"Jack Q Buyer\", \n    \"roles\": [\n      \"buyer\"\n    ],
+        \n    \"created_at\": \"2012-07-06T04:15:33.906619Z\", \n    \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU\",
+        \n    \"bank_accounts_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/bank_accounts\",
+        \n    \"refunds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/refunds\",
+        \n    \"meta\": {}, \n    \"debits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/debits\",
+        \n    \"transactions_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/transactions\",
+        \n    \"email_address\": \"buyer+transactions@example.org\", \n    \"id\":
+        \"AC1NIz6vDOr8Tw4XRtWTewBU\", \n    \"credits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/credits\",
+        \n    \"cards_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/cards\"\n
+        \ }, \n  \"fee\": 29, \n  \"description\": \"Transaction #5\", \n  \"refunds_uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/debits/WD1ZElmKz5gaPICjnJadnUWB/refunds\",
+        \n  \"amount\": 1000, \n  \"created_at\": \"2012-07-06T04:15:44.518800Z\",
+        \n  \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/debits/WD1ZElmKz5gaPICjnJadnUWB\",
+        \n  \"source\": {\n    \"expiration_month\": 1, \n    \"name\": null, \n    \"expiration_year\":
+        2015, \n    \"brand\": \"Visa\", \n    \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/cards/CC1LP0YFu1wFtca1ZI5amO6y\",
+        \n    \"id\": \"CC1LP0YFu1wFtca1ZI5amO6y\", \n    \"card_type\": \"visa\",
+        \n    \"is_valid\": true, \n    \"meta\": {}, \n    \"last_four\": 1111, \n
+        \   \"created_at\": \"2012-07-06T04:15:32.221146Z\"\n  }, \n  \"transaction_number\":
+        \"W126-199-1707\", \n  \"meta\": {}, \n  \"appears_on_statement_as\": \"example.com\",
+        \n  \"hold\": {\n    \"fee\": 30, \n    \"description\": \"Transaction #5\",
+        \n    \"created_at\": \"2012-07-06T04:15:44.294547Z\", \n    \"is_void\":
+        false, \n    \"expires_at\": \"2012-07-13T04:15:44.264105Z\", \n    \"uri\":
+        \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/holds/HL1ZpkjvL36zSuTHp9Bc2CWR\",
+        \n    \"amount\": 1000, \n    \"meta\": {}, \n    \"account_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU\",
+        \n    \"source_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1NIz6vDOr8Tw4XRtWTewBU/cards/CC1LP0YFu1wFtca1ZI5amO6y\",
+        \n    \"id\": \"HL1ZpkjvL36zSuTHp9Bc2CWR\"\n  }, \n  \"id\": \"WD1ZElmKz5gaPICjnJadnUWB\",
+        \n  \"available_at\": \"2012-07-06T04:15:44.447972Z\"\n}"
+    http_version: !!null 
+  recorded_at: Fri, 06 Jul 2012 04:15:45 GMT
+- request:
+    method: post
+    uri: https://api.balancedpayments.com/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/credits
+    body:
+      encoding: UTF-8
+      string: ! '{"amount":500,"meta":null,"description":"Credit from Debit #5","destination_uri":null}'
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.5
+      Authorization:
+      - Basic Mzc2MTlkYzZjNzIxMTFlMWE5NzcwMjZiYTdlMjM5YTk6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Fri, 06 Jul 2012 04:15:46 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHM423fe7d4c72111e19eae026ba7e5e72e
+      x-balanced-marketplace:
+      - TEST-MP1HgCDnKZSw46yAiLUC5aNM
+      x-balanced-merchant:
+      - TEST-MR1GePqSVApIeytkkt2HmTQR
+      x-balanced-version:
+      - ''
+      content-length:
+      - '1932'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"account\": {\n    \"holds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/holds\",
+        \n    \"name\": \"Jack Q Merchant\", \n    \"roles\": [\n      \"merchant\",
+        \n      \"buyer\"\n    ], \n    \"created_at\": \"2012-07-06T04:15:32.816841Z\",
+        \n    \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3\",
+        \n    \"bank_accounts_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/bank_accounts\",
+        \n    \"refunds_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/refunds\",
+        \n    \"meta\": {}, \n    \"debits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/debits\",
+        \n    \"transactions_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/transactions\",
+        \n    \"email_address\": \"merchant@example.org\", \n    \"id\": \"AC1MuWU1d7tpswJuERuuULX3\",
+        \n    \"credits_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/credits\",
+        \n    \"cards_uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/cards\"\n
+        \ }, \n  \"fee\": 25, \n  \"description\": \"Credit from Debit #5\", \n  \"amount\":
+        500, \n  \"created_at\": \"2012-07-06T04:15:45.923044Z\", \n  \"destination\":
+        {\n    \"bank_name\": \"SAN MATEO CREDIT UNION\", \n    \"name\": \"Jack Q
+        Merchant\", \n    \"bank_code\": \"321174851\", \n    \"created_at\": \"2012-07-06T04:15:30.640361Z\",
+        \n    \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/accounts/AC1MuWU1d7tpswJuERuuULX3/bank_accounts/BA1K3bzOqNBU3dLH3cTEdiaZ\",
+        \n    \"is_valid\": true, \n    \"meta\": {}, \n    \"last_four\": \"7890\",
+        \n    \"id\": \"BA1K3bzOqNBU3dLH3cTEdiaZ\"\n  }, \n  \"uri\": \"/v1/marketplaces/TEST-MP1HgCDnKZSw46yAiLUC5aNM/credits/CR21ek5SlHEUm7Gzhg320Mhg\",
+        \n  \"transaction_number\": \"CR353-365-2080\", \n  \"meta\": {}, \n  \"id\":
+        \"CR21ek5SlHEUm7Gzhg320Mhg\", \n  \"available_at\": \"2012-07-06T04:15:45.876405Z\"\n}"
+    http_version: !!null 
+  recorded_at: Fri, 06 Jul 2012 04:15:46 GMT
+recorded_with: VCR 2.2.2

@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://api.balancedpayments.com/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/holds/HL3sNuNvBbcwunpzF9KhWBMR
+    body:
+      encoding: UTF-8
+      string: ! '{"account":"#<Balanced::Account:0x007fca3e10f558>","fee":30,"description":null,"amount":100,"created_at":"2012-07-06T04:24:15.050591Z","expires_at":"2012-07-13T04:24:14.968037Z","source":"#<Balanced::Card:0x007fca3e08ff88>","is_void":true,"meta":{},"debit":null,"id":"HL3sNuNvBbcwunpzF9KhWBMR"}'
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.5
+      Authorization:
+      - Basic NmU5Y2YwZDJjNzIyMTFlMWEyOWMwMjZiYTdlNWU3MmU6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Fri, 06 Jul 2012 04:24:16 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHM725632cec72211e1a29c026ba7e5e72e
+      x-balanced-marketplace:
+      - TEST-MP3nhHH5OdNRTfziINDIhNjU
+      x-balanced-merchant:
+      - TEST-MR3mjdQAaIuYnml4foiSL87Q
+      x-balanced-version:
+      - ''
+      content-length:
+      - '1886'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"account\": {\n    \"holds_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/holds\",
+        \n    \"name\": null, \n    \"roles\": [\n      \"buyer\"\n    ], \n    \"created_at\":
+        \"2012-07-06T04:24:13.812316Z\", \n    \"uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1\",
+        \n    \"bank_accounts_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/bank_accounts\",
+        \n    \"refunds_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/refunds\",
+        \n    \"meta\": {}, \n    \"debits_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/debits\",
+        \n    \"transactions_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/transactions\",
+        \n    \"email_address\": \"buyer@example.org\", \n    \"id\": \"AC3rprFH4OxDBdGa1gGIMTq1\",
+        \n    \"credits_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/credits\",
+        \n    \"cards_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/cards\"\n
+        \ }, \n  \"fee\": 30, \n  \"description\": null, \n  \"amount\": 100, \n  \"created_at\":
+        \"2012-07-06T04:24:15.050591Z\", \n  \"uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/holds/HL3sNuNvBbcwunpzF9KhWBMR\",
+        \n  \"expires_at\": \"2012-07-13T04:24:14.968037Z\", \n  \"source\": {\n    \"expiration_month\":
+        12, \n    \"name\": null, \n    \"expiration_year\": 2015, \n    \"brand\":
+        \"MasterCard\", \n    \"uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/cards/CC3qrrK6WTDSWEt1OcUOgasp\",
+        \n    \"id\": \"CC3qrrK6WTDSWEt1OcUOgasp\", \n    \"card_type\": \"mastercard\",
+        \n    \"is_valid\": true, \n    \"meta\": {}, \n    \"last_four\": 5100, \n
+        \   \"created_at\": \"2012-07-06T04:24:12.952100Z\"\n  }, \n  \"is_void\":
+        true, \n  \"meta\": {}, \n  \"debit\": null, \n  \"id\": \"HL3sNuNvBbcwunpzF9KhWBMR\"\n}"
+    http_version: !!null 
+  recorded_at: Fri, 06 Jul 2012 04:24:16 GMT
+recorded_with: VCR 2.2.2

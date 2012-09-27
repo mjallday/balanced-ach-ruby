@@ -1,0 +1,306 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.balancedpayments.com/v1/merchants
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.6
+      Authorization:
+      - Basic NmU5Y2YwZDJjNzIyMTFlMWEyOWMwMjZiYTdlNWU3MmU6
+  response:
+    status:
+      code: 200
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Sat, 07 Jul 2012 17:18:49 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHMd11453e6c85711e1ad0d026ba7e5e72e
+      x-balanced-marketplace:
+      - TEST-MP3nhHH5OdNRTfziINDIhNjU
+      x-balanced-merchant:
+      - TEST-MR3mjdQAaIuYnml4foiSL87Q
+      x-balanced-version:
+      - ''
+      content-length:
+      - '2066'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"first_uri\": \"/v1/merchants?limit=10&offset=0\", \n  \"items\":
+        [\n    {\n      \"phone_number\": \"+16505551212\", \n      \"city\": \"Nowhere\",
+        \n      \"marketplace\": {\n        \"in_escrow\": 150, \n        \"domain_url\":
+        \"example.com\", \n        \"name\": \"Test Marketplace\", \n        \"owner_account_uri\":
+        \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3nQ4AY7MV8fC3G4dJxGxSS\",
+        \n        \"support_email_address\": \"support@example.com\", \n        \"uri\":
+        \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU\", \n        \"bank_accounts_uri\":
+        \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/bank_accounts\", \n        \"support_phone_number\":
+        \"+16505551234\", \n        \"refunds_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/refunds\",
+        \n        \"meta\": {}, \n        \"debits_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/debits\",
+        \n        \"holds_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/holds\",
+        \n        \"transactions_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/transactions\",
+        \n        \"accounts_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts\",
+        \n        \"id\": \"TEST-MP3nhHH5OdNRTfziINDIhNjU\", \n        \"credits_uri\":
+        \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/credits\", \n        \"cards_uri\":
+        \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/cards\"\n      }, \n      \"name\":
+        \"William Henry Cavendish III\", \n      \"email_address\": \"whc@example.org\",
+        \n      \"created_at\": \"2012-07-06T04:24:09.283512Z\", \n      \"uri\":
+        \"/v1/merchants/TEST-MR3mjdQAaIuYnml4foiSL87Q\", \n      \"accounts_uri\":
+        \"/v1/merchants/TEST-MR3mjdQAaIuYnml4foiSL87Q/accounts\", \n      \"meta\":
+        {}, \n      \"postal_code\": \"90210\", \n      \"country_code\": \"USA\",
+        \n      \"type\": \"person\", \n      \"balance\": -64, \n      \"api_keys_uri\":
+        \"/v1/merchants/TEST-MR3mjdQAaIuYnml4foiSL87Q/api_keys\", \n      \"id\":
+        \"TEST-MR3mjdQAaIuYnml4foiSL87Q\", \n      \"street_address\": \"123 Fake
+        St\"\n    }\n  ], \n  \"previous_uri\": null, \n  \"uri\": \"/v1/merchants?limit=10&offset=0\",
+        \n  \"limit\": 10, \n  \"offset\": 0, \n  \"total\": 1, \n  \"next_uri\":
+        null, \n  \"last_uri\": \"/v1/merchants?limit=10&offset=0\"\n}"
+    http_version: !!null 
+  recorded_at: Sat, 07 Jul 2012 17:18:51 GMT
+- request:
+    method: get
+    uri: https://api.balancedpayments.com/v1/merchants
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.6
+      Authorization:
+      - Basic NmU5Y2YwZDJjNzIyMTFlMWEyOWMwMjZiYTdlNWU3MmU6
+  response:
+    status:
+      code: 200
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Sat, 07 Jul 2012 17:18:58 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHMd68df9bcc85711e1a476026ba7e239a9
+      x-balanced-marketplace:
+      - TEST-MP3nhHH5OdNRTfziINDIhNjU
+      x-balanced-merchant:
+      - TEST-MR3mjdQAaIuYnml4foiSL87Q
+      x-balanced-version:
+      - ''
+      content-length:
+      - '2066'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"first_uri\": \"/v1/merchants?limit=10&offset=0\", \n  \"items\":
+        [\n    {\n      \"phone_number\": \"+16505551212\", \n      \"city\": \"Nowhere\",
+        \n      \"marketplace\": {\n        \"in_escrow\": 150, \n        \"domain_url\":
+        \"example.com\", \n        \"name\": \"Test Marketplace\", \n        \"owner_account_uri\":
+        \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3nQ4AY7MV8fC3G4dJxGxSS\",
+        \n        \"support_email_address\": \"support@example.com\", \n        \"uri\":
+        \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU\", \n        \"bank_accounts_uri\":
+        \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/bank_accounts\", \n        \"support_phone_number\":
+        \"+16505551234\", \n        \"refunds_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/refunds\",
+        \n        \"meta\": {}, \n        \"debits_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/debits\",
+        \n        \"holds_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/holds\",
+        \n        \"transactions_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/transactions\",
+        \n        \"accounts_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts\",
+        \n        \"id\": \"TEST-MP3nhHH5OdNRTfziINDIhNjU\", \n        \"credits_uri\":
+        \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/credits\", \n        \"cards_uri\":
+        \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/cards\"\n      }, \n      \"name\":
+        \"William Henry Cavendish III\", \n      \"email_address\": \"whc@example.org\",
+        \n      \"created_at\": \"2012-07-06T04:24:09.283512Z\", \n      \"uri\":
+        \"/v1/merchants/TEST-MR3mjdQAaIuYnml4foiSL87Q\", \n      \"accounts_uri\":
+        \"/v1/merchants/TEST-MR3mjdQAaIuYnml4foiSL87Q/accounts\", \n      \"meta\":
+        {}, \n      \"postal_code\": \"90210\", \n      \"country_code\": \"USA\",
+        \n      \"type\": \"person\", \n      \"balance\": -64, \n      \"api_keys_uri\":
+        \"/v1/merchants/TEST-MR3mjdQAaIuYnml4foiSL87Q/api_keys\", \n      \"id\":
+        \"TEST-MR3mjdQAaIuYnml4foiSL87Q\", \n      \"street_address\": \"123 Fake
+        St\"\n    }\n  ], \n  \"previous_uri\": null, \n  \"uri\": \"/v1/merchants?limit=10&offset=0\",
+        \n  \"limit\": 10, \n  \"offset\": 0, \n  \"total\": 1, \n  \"next_uri\":
+        null, \n  \"last_uri\": \"/v1/merchants?limit=10&offset=0\"\n}"
+    http_version: !!null 
+  recorded_at: Sat, 07 Jul 2012 17:19:00 GMT
+- request:
+    method: post
+    uri: https://api.balancedpayments.com/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/holds
+    body:
+      encoding: UTF-8
+      string: ! '{"amount":150,"meta":null,"source_uri":null}'
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.6
+      Authorization:
+      - Basic NmU5Y2YwZDJjNzIyMTFlMWEyOWMwMjZiYTdlNWU3MmU6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Sat, 07 Jul 2012 17:19:57 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHMf9ad7e9ac85711e1b502026ba7e239a9
+      x-balanced-marketplace:
+      - TEST-MP3nhHH5OdNRTfziINDIhNjU
+      x-balanced-merchant:
+      - TEST-MR3mjdQAaIuYnml4foiSL87Q
+      x-balanced-version:
+      - ''
+      content-length:
+      - '1887'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"account\": {\n    \"holds_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/holds\",
+        \n    \"name\": null, \n    \"roles\": [\n      \"buyer\"\n    ], \n    \"created_at\":
+        \"2012-07-06T04:24:13.812316Z\", \n    \"uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1\",
+        \n    \"bank_accounts_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/bank_accounts\",
+        \n    \"refunds_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/refunds\",
+        \n    \"meta\": {}, \n    \"debits_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/debits\",
+        \n    \"transactions_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/transactions\",
+        \n    \"email_address\": \"buyer@example.org\", \n    \"id\": \"AC3rprFH4OxDBdGa1gGIMTq1\",
+        \n    \"credits_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/credits\",
+        \n    \"cards_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/cards\"\n
+        \ }, \n  \"fee\": 30, \n  \"description\": null, \n  \"amount\": 150, \n  \"created_at\":
+        \"2012-07-07T17:19:57.729365Z\", \n  \"uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/holds/HL7Bsc0waRltve1zfW2uEtV7\",
+        \n  \"expires_at\": \"2012-07-14T17:19:57.662192Z\", \n  \"source\": {\n    \"expiration_month\":
+        12, \n    \"name\": null, \n    \"expiration_year\": 2015, \n    \"brand\":
+        \"MasterCard\", \n    \"uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/cards/CC3qrrK6WTDSWEt1OcUOgasp\",
+        \n    \"id\": \"CC3qrrK6WTDSWEt1OcUOgasp\", \n    \"card_type\": \"mastercard\",
+        \n    \"is_valid\": true, \n    \"meta\": {}, \n    \"last_four\": 5100, \n
+        \   \"created_at\": \"2012-07-06T04:24:12.952100Z\"\n  }, \n  \"is_void\":
+        false, \n  \"meta\": {}, \n  \"debit\": null, \n  \"id\": \"HL7Bsc0waRltve1zfW2uEtV7\"\n}"
+    http_version: !!null 
+  recorded_at: Sat, 07 Jul 2012 17:20:00 GMT
+- request:
+    method: post
+    uri: https://api.balancedpayments.com/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/debits
+    body:
+      encoding: UTF-8
+      string: ! '{"amount":150,"appears_on_statement_as":null,"hold_uri":"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/holds/HL7Bsc0waRltve1zfW2uEtV7","meta":null,"description":null,"source_uri":null}'
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.6
+      Authorization:
+      - Basic NmU5Y2YwZDJjNzIyMTFlMWEyOWMwMjZiYTdlNWU3MmU6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Sat, 07 Jul 2012 17:20:04 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHMfd6a7b28c85711e1a29c026ba7e5e72e
+      x-balanced-marketplace:
+      - TEST-MP3nhHH5OdNRTfziINDIhNjU
+      x-balanced-merchant:
+      - TEST-MR3mjdQAaIuYnml4foiSL87Q
+      x-balanced-version:
+      - ''
+      content-length:
+      - '2633'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"account\": {\n    \"holds_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/holds\",
+        \n    \"name\": null, \n    \"roles\": [\n      \"buyer\"\n    ], \n    \"created_at\":
+        \"2012-07-06T04:24:13.812316Z\", \n    \"uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1\",
+        \n    \"bank_accounts_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/bank_accounts\",
+        \n    \"refunds_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/refunds\",
+        \n    \"meta\": {}, \n    \"debits_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/debits\",
+        \n    \"transactions_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/transactions\",
+        \n    \"email_address\": \"buyer@example.org\", \n    \"id\": \"AC3rprFH4OxDBdGa1gGIMTq1\",
+        \n    \"credits_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/credits\",
+        \n    \"cards_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/cards\"\n
+        \ }, \n  \"fee\": 4, \n  \"description\": null, \n  \"refunds_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/debits/WD7ICPq6ybRhDwaBvCFbMHyS/refunds\",
+        \n  \"amount\": 150, \n  \"created_at\": \"2012-07-07T17:20:04.112249Z\",
+        \n  \"uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/debits/WD7ICPq6ybRhDwaBvCFbMHyS\",
+        \n  \"source\": {\n    \"expiration_month\": 12, \n    \"name\": null, \n
+        \   \"expiration_year\": 2015, \n    \"brand\": \"MasterCard\", \n    \"uri\":
+        \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/cards/CC3qrrK6WTDSWEt1OcUOgasp\",
+        \n    \"id\": \"CC3qrrK6WTDSWEt1OcUOgasp\", \n    \"card_type\": \"mastercard\",
+        \n    \"is_valid\": true, \n    \"meta\": {}, \n    \"last_four\": 5100, \n
+        \   \"created_at\": \"2012-07-06T04:24:12.952100Z\"\n  }, \n  \"transaction_number\":
+        \"W643-192-1884\", \n  \"meta\": {}, \n  \"appears_on_statement_as\": \"example.com\",
+        \n  \"hold\": {\n    \"fee\": 30, \n    \"description\": null, \n    \"created_at\":
+        \"2012-07-07T17:19:57.729365Z\", \n    \"is_void\": false, \n    \"expires_at\":
+        \"2012-07-14T17:19:57.662192Z\", \n    \"uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/holds/HL7Bsc0waRltve1zfW2uEtV7\",
+        \n    \"amount\": 150, \n    \"meta\": {}, \n    \"account_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1\",
+        \n    \"source_uri\": \"/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/accounts/AC3rprFH4OxDBdGa1gGIMTq1/cards/CC3qrrK6WTDSWEt1OcUOgasp\",
+        \n    \"id\": \"HL7Bsc0waRltve1zfW2uEtV7\"\n  }, \n  \"id\": \"WD7ICPq6ybRhDwaBvCFbMHyS\",
+        \n  \"available_at\": \"2012-07-07T17:20:04.035173Z\"\n}"
+    http_version: !!null 
+  recorded_at: Sat, 07 Jul 2012 17:20:10 GMT
+- request:
+    method: put
+    uri: https://api.balancedpayments.com/v1/marketplaces/TEST-MP3nhHH5OdNRTfziINDIhNjU/holds/HL7Bsc0waRltve1zfW2uEtV7
+    body:
+      encoding: UTF-8
+      string: ! '{"account":"#<Balanced::Account:0x007fa9ac286bf0>","fee":30,"description":null,"amount":150,"created_at":"2012-07-07T17:19:57.729365Z","expires_at":"2012-07-14T17:19:57.662192Z","source":"#<Balanced::Card:0x007fa9ac27e220>","is_void":true,"meta":{},"debit":null,"id":"HL7Bsc0waRltve1zfW2uEtV7"}'
+    headers:
+      User-Agent:
+      - balanced-ruby/0.3.6
+      Authorization:
+      - Basic NmU5Y2YwZDJjNzIyMTFlMWEyOWMwMjZiYTdlNWU3MmU6
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 409
+      message: !!null 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Sat, 07 Jul 2012 17:20:14 GMT
+      server:
+      - nginx/1.0.14
+      x-balanced-guru:
+      - OHM03554d9cc85811e1a476026ba7e239a9
+      x-balanced-marketplace:
+      - TEST-MP3nhHH5OdNRTfziINDIhNjU
+      x-balanced-merchant:
+      - TEST-MR3mjdQAaIuYnml4foiSL87Q
+      x-balanced-version:
+      - ''
+      x-sentry-event:
+      - 1deaeae0a85a47029a988db10daf33ce
+      content-length:
+      - '335'
+      connection:
+      - Close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"status\": \"Conflict\", \n  \"category_code\": \"cannot-void-authorization\",
+        \n  \"additional\": null, \n  \"status_code\": 409, \n  \"category_type\":
+        \"logical\", \n  \"extras\": {}, \n  \"request_id\": \"OHM03554d9cc85811e1a476026ba7e239a9\",
+        \n  \"description\": \"Hold already captured or voided. Your request id is
+        OHM03554d9cc85811e1a476026ba7e239a9.\"\n}"
+    http_version: !!null 
+  recorded_at: Sat, 07 Jul 2012 17:20:16 GMT
+recorded_with: VCR 2.2.2
