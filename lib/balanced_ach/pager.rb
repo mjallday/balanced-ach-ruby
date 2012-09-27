@@ -150,11 +150,11 @@ module Balanced
 
       unless parsed_uri.query.nil?
         # The reason we don't use CGI::parse here is because
-        # the balanced api currently can't handle variable[]=value.
+        # the balanced_ach api currently can't handle variable[]=value.
         # Faraday ends up encoding a simple query string like:
         #    {"limit"=>["10"], "offset"=>["0"]}
         # to limit[]=10&offset[]=0 and that's cool, but
-        # we have to make sure balanced supports it.
+        # we have to make sure balanced_ach supports it.
         query_params = parse_query(parsed_uri.query)
         params.merge! query_params
         parsed_uri.query = nil

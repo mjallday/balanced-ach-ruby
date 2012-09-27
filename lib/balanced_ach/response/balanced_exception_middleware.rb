@@ -1,5 +1,5 @@
 require 'faraday'
-require 'balanced/error'
+require 'balanced_ach/error'
 
 # @api private
 module Faraday

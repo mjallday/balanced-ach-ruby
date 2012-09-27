@@ -2,13 +2,8 @@
 require 'ruby-debug'
 
 $:.unshift("/Users/mahmoud/code/poundpay/ruby/balanced-ach/lib")
-require "balanced"
-Balanced.configure(nil, {
-    :scheme => 'http',
-    :host => 'localhost',
-    :port => 9000,
-    :version => 'a0',
-})
+require "balanced_ach"
+
 ba = Balanced::BankAccount.new(
     :name => "Gottfried Leibniz",
     :account_number => "3819372930",

@@ -63,7 +63,7 @@ module Balanced
     #end
 
     def url
-      URI::HTTP.build :host => config[:host], :port => config[:port]
+      URI::HTTPS.build :host => config[:host], :port => config[:port]
     end
 
     private

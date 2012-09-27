@@ -1,12 +1,12 @@
-$:.unshift File.join(File.dirname(__FILE__), "balanced", "resources")
-$:.unshift File.join(File.dirname(__FILE__), "balanced", "response")
+$:.unshift File.join(File.dirname(__FILE__), "balanced_ach", "resources")
+$:.unshift File.join(File.dirname(__FILE__), "balanced_ach", "response")
 
 require 'uri'
-require 'balanced/version' unless defined? Balanced::VERSION
-require 'balanced/client'
-require 'balanced/utils'
-require 'balanced/resources'
-require 'balanced/error'
+require 'balanced_ach/version' unless defined? Balanced::VERSION
+require 'balanced_ach/client'
+require 'balanced_ach/utils'
+require 'balanced_ach/resources'
+require 'balanced_ach/error'
 
 module Balanced
 

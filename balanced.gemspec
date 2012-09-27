@@ -1,7 +1,7 @@
 #!/usr/bin/env gem build
 # -*- encoding: utf-8 -*-
 require "base64"
-require File.expand_path('../lib/balanced/version', __FILE__)
+require File.expand_path('../lib/balanced_ach/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Mahmoud Abdelkader"]
@@ -16,7 +16,7 @@ Gem::Specification.new do |gem|
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
-  gem.name          = "balanced"
+  gem.name          = "balanced-ach"
   gem.require_paths = %w(lib)
   gem.version       = Balanced::VERSION
 end

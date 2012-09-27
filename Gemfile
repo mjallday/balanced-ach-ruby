@@ -1,6 +1,6 @@
 source :rubygems
 
-# Specify your gem's dependencies in balanced.gemspec
+# Specify your gem's dependencies in balanced_ach.gemspec
 
 gem "faraday"
 gem "faraday_middleware"
