@@ -2,13 +2,13 @@
 
 Online Marketplace Payments
 
-[![Build Status](https://secure.travis-ci.org/balanced/balanced-ruby.png)](http://travis-ci.org/balanced/balanced-ruby)
+[![Build Status](https://secure.travis-ci.org/balanced/balanced-ach-ruby.png)](http://travis-ci.org/balanced/balanced-ach-ruby)
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'balanced'
+    gem 'balanced-ach'
 
 And then execute:
 
@@ -16,49 +16,63 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install balanced
+    $ gem install balanced-ach
 
 ## Usage
 
-See https://www.balancedpayments.com/docs/ruby for tutorials and documentation.
+### Create a Bank Account
+
+    require 'balanced_ach'
+
+    # create a bank account
+    ba = Balanced::BankAccount.new(
+        :name => "Gottfried Leibniz",
+        :account_number => "3819372930",
+	:routing_number => "121042882",
+    	:type => "checking"
+    ).save
+
+    # credit this bank account $1.00 USD
+    ba.credit(:amount => 100)
+
+    # debit this bank account $1.00 USD
+    ba.debit(:amount => 100)
+
+    # retrieve this bank account at a later date
+    Balanced::BankAccount.find(ba.uri)
+
+    # delete this bank account
+    ba.unstore
 
 
-## Contributing
+### Debit a Bank Account
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Write your code **and unit tests**
-4. Ensure all tests still pass (`bundle exec rspec`)
-5. Commit your changes (`git commit -am 'Add some feature'`)
-6. Push to the branch (`git push origin my-new-feature`)
-7. Create new pull request
+    require 'balanced_ach'
 
+    # debit this bank account $1.00 USD
+    Balanced::Debit.new(
+	:bank_account => {
+            :name => "Gottfried Leibniz",
+	    :account_number => "3819372930",
+            :routing_number => "121042882",
+	    :type => "checking"
+	}, :amount => 100
+    ).save
 
-### Specs
+### Credit a Bank Account
 
-The spec suite is a work in progress.  Existing specs can either be run
-using [guard](https://github.com/guard/guard) or rake.
+    require 'balanced_ach'
 
-Guard
-
-    $ bundle exec guard
-
-Rake
-
-    $ rake spec
-
-We use [VCR](https://www.relishapp.com/myronmarston/vcr/docs) to stub
-out and save http interactions.  Cassettes are not stored in the repo.
-They are generated the first time the spec suite is run and stored in
-spec/cassettes.  To clear them and regenerate:
-
-    $ rm -rf spec/cassettes
+    # credit this bank account $1.00 USD
+    Balanced::Credit.new(
+        :bank_account => {
+            :name => "Gottfried Leibniz",
+            :account_number => "3819372930",
+            :routing_number => "121042882",
+	        :type => "checking"
+        }, :amount => 100
+    ).save
 
 
-### Building Documentation
 
-Documentation is build using YARD - http://rubydoc.info/docs/yard
- 
-    export AMAZON_ACCESS_KEY_ID='xxx'
-    export AMAZON_SECRET_ACCESS_KEY='yyy' 
-    ./upload_docs.rb
+
